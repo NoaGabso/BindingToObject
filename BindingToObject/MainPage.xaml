@@ -20,7 +20,7 @@
             <Image HeightRequest="180" WidthRequest="180" HorizontalOptions="Center"  Source="{Binding Image}" />
         </Border>
         <!--  תאריך לידה  -->
-        <Label HorizontalOptions="Center" Text="{Binding BirthDate, StringFormat='{0:dd/MM/yyyy}'}" />
+        <Label HorizontalOptions="Center" Text="{Binding BirthDate, StringFormat='{0:dd/MM/yyyy}'}" /> 
         <!--  חישוב גיל  -->
         
         <!--  גיל  -->
