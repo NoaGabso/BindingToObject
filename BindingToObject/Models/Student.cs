@@ -11,7 +11,7 @@ namespace BindingToObject.Models
         public string Name { get; set; }    
         public string Image { get; set; }
         public DateTime BirthDate { get; set; }
-
+        public int Age { get => (int)(DateTime.Now - BirthDate).TotalDays / 365; }
 
     }
 }
