@@ -25,7 +25,7 @@
         
         <!--  גיל  -->
         <Label HorizontalOptions="Center" Text="{Binding Age}" />
-
+        <Slider Minimum="2006" Maximum="2500"/>
     </StackLayout>
 
 </ContentPage>
