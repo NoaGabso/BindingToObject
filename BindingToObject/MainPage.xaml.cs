@@ -20,7 +20,12 @@ public partial class MainPage : ContentPage
         InitializeComponent();
 
     }
+    private void ageSlider_ValueChanged(object sender, ValueChangedEventArgs e)
+    {
+        student.CuurentDate=new DateTime((int)e.NewValue, student.BirthDate.Month, student.BirthDate.Day);
+    }
 
-   
+
+
 }
 
