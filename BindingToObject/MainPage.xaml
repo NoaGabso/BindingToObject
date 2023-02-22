@@ -25,8 +25,8 @@
         
         <!--  גיל  -->
         <Label HorizontalOptions="Center" Text="{Binding Age}" />
-        <Slider x:Name="ageSlider" Minimum="2006" Maximum="2500" Value="{Binding CuurentDate.Year}" 
-                ValueChanged="ageSlider_ValueChanged"/>
+        <Slider x:Name="ageSlider" Minimum="2006" Maximum="2500" Value="{Binding CuurentDate.Year}" />
+                <!--ValueChanged="ageSlider_ValueChanged"--> 
         <Label  Text="{Binding Source={x:Reference ageSlider},Path=Value, StringFormat='{0:F0}'}"/>
     </StackLayout>
 

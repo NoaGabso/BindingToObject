@@ -17,7 +17,19 @@ namespace BindingToObject.Models
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public DateTime CuurentDate { get { return cuurentDate; } set { cuurentDate= value; OnPropertyChanged("CuurentDate"); } }
+        public DateTime CuurentDate
+        {
+            get { return cuurentDate; }
+            set
+            {
+                if (value != cuurentDate)
+                {
+                    cuurentDate = value;
+                    OnPropertyChanged("CuurentDate");
+                    OnPropertyChanged("Age");
+                }
+            }
+        }
         public int Age { get => (int)(CuurentDate - BirthDate).TotalDays / 365; }
         public Student()
         { CuurentDate =DateTime.Now; }
